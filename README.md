@@ -1,6 +1,9 @@
-# Synthetic Population Generation for Spatial Agent-Based Models of Infectious Disease Spread
+# Synthetic Population Generation for Spatial Agent-Based Models of Infectious Disease Spread and other Public Health Challenges
 
 This repository contains the code used for generating a synthetic population with public health surveys for the initialization of agent populations within spatial ABMs, as well as the data used to validate the synthesized vaccination uptake at the census tract level in Virginia for December 2021. The synthetic population is created by integrating spatially aggregated demographic data from the American Community Survey (ACS) with individual-level survey data on COVID-19 vaccine uptake. The method is adaptable to various spatial scales, time periods, and other health applications such as smoking and other protective behaviors.
+
+![Overview of Synthetic Population Generation](![ipf_capture](https://github.com/user-attachments/assets/5f5248af-fd04-4218-b138-212b0fb0b69f)
+)
 
 ### Data Sources
 
