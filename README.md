@@ -2,8 +2,7 @@
 
 This repository contains the code used for generating a synthetic population with public health surveys for the initialization of agent populations within spatial ABMs, as well as the data used to validate the synthesized vaccination uptake at the census tract level in Virginia for December 2021. The synthetic population is created by integrating spatially aggregated demographic data from the American Community Survey (ACS) with individual-level survey data on COVID-19 vaccine uptake. The method is adaptable to various spatial scales, time periods, and other health applications such as smoking and other protective behaviors.
 
-![Overview of Synthetic Population Generation](![ipf_capture](https://github.com/user-attachments/assets/5f5248af-fd04-4218-b138-212b0fb0b69f)
-)
+
 
 ### Data Sources
 
@@ -24,7 +23,7 @@ This study and the associated code are designed to be adaptable across various s
 
 ## Repository Contents
 
-- **`POP_GEN_SCRIPT.R`**: This script contains the code used to generate a synthetic population based on various demographic and health-related variables. The method integrates individual attitudes and initial adoption of protective behaviors using public health survey data, making it applicable for various public health studies.
+- **`POP_GEN_SCRIPT.R`**: This script contains the code used to generate a synthetic population based on various demographic and COVID-19 health-related variables. The method integrates individual attitudes and initial adoption of protective behaviors using public health survey data, making it applicable for various public health studies. This script also includes generating a synthetic population based on the null model. 
 
 - **`Census_Tract_VA_Vaccine_Data.xlsx`**: This dataset includes vaccination uptake data for census tracts in Virginia for December 2021 and December 2022. It is used to validate and compare the synthetic population with real-world data.
 
