@@ -6,11 +6,11 @@ This repository contains the code used for generating a synthetic population wit
 
 ### Data Sources
 
-- **Census Tract Data**: We use 2021 ACS data for Virginia Census Tracts, focusing on individuals aged 18 and over. The demographic variables include gender, race, age, education, and income, which significantly influence COVID-19 vaccine uptake. The dataset excludes records with missing or zero values, resulting in 2162 records.
+- **Census Tract Data**: We use 2021 ACS data for Virginia Census Tracts, focusing on individuals aged 18 and over. The demographic variables include gender, race, age, education, and income, which significantly influence COVID-19 vaccine uptake. The dataset excludes records with missing or zero values, resulting in 2162 records. The dataset can be obtained at differing aggregation levels and for various locations at https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-data.html. 
 
 - **Local Survey**: This survey is representative of Virginia and includes data on demographics, beliefs, attitudes, and perceptions related to COVID-19 and protective behaviors. Collected by Climate Nexus Polling (August 15-31, 2021), the survey sample includes 3,528 respondents. The dataset is de-identified and available upon request. This project was approved by the George Mason University IRB (IRB 1684418-3).
 
-- **Household Pulse Survey (HPS)**: A publicly available national survey from the US Census Bureau, focusing on the social and economic impacts of COVID-19. We use HPS Week 41 data, reducing the sample to 3,500 respondents to match the size of the local survey, adjusting the vaccination rate to 50% for alignment with Virginia data.
+- **Household Pulse Survey (HPS)**: A publicly available national survey from the US Census Bureau, focusing on the social and economic impacts of COVID-19. We use HPS Week 41 data, reducing the sample to 3,500 respondents to match the size of the local survey, adjusting the vaccination rate to 50% for alignment with Virginia data. More information and the obtained dataset is avaiable at https://www.census.gov/data/experimental-data-products/household-pulse-survey.html. 
 
 ### Validation
 
