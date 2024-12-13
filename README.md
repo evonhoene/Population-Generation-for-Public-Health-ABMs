@@ -23,7 +23,7 @@ This study and the associated code are designed to be adaptable across various s
 
 ## Repository Contents
 
-- **`POP_GEN_SCRIPT.R`**: This script contains the code used to generate a synthetic population based on various demographic and COVID-19 health-related variables. The method integrates individual attitudes and initial adoption of protective behaviors using public health survey data, making it applicable for various public health studies. This script also includes generating a synthetic population based on the null model.
+- **`POP_GEN_SCRIPT.R`**: This script contains the code used to generate a synthetic population based on various demographic and COVID-19 health-related variables. The method integrates individual attitudes and initial adoption of protective behaviors using public health survey data, making it applicable for various public health studies. This script also includes generating a synthetic population based on the null model, and stratified sampling to reduce datasets and address bias.
 
 - **`NPS_Dataset.xlsx`**: This is the de-identified nationally representative survey (NPS) collected by researchers in August 2021. This was one of the surveys used to generate synthetic populations.
 
@@ -34,7 +34,7 @@ This study and the associated code are designed to be adaptable across various s
 1. **Synthetic Population Generation**: 
    - The `POP_GEN_SCRIPT.R` script is designed to be run in R. It generates a synthetic population based on demographic distributions and health survey data.
    - Ensure that all necessary R packages are installed, and update file paths as needed.
-   - Survey data and spatially aggregated data will need to be collected and processed by the researcher to incorporate into the script
+   - Survey data and spatially aggregated data will need to be collected and processed by the researcher to incorporate into the script.
      
 2. **Accessible Survey Data**: 
  - The `NPS_Dataset.xlsx` survey dataset is made available for use by other researchers. It can be used in the provided population synthesis script to generate a population that includes COVID-19 vaccination status and related attitudes and perceptions, aligned with the Health Belief Model and Theory of Planned Behavior. This dataset can be integrated with spatially aggregated data from any U.S. location to create an agent population aged 18+ that is representative of 2021, making it applicable to areas outside of Virginia since it is national-level.
