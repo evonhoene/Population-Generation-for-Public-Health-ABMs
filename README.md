@@ -14,7 +14,7 @@ This repository contains the code used for generating a synthetic population wit
 
 ### Validation
 
-Validation is performed using CT-level vaccine uptake data for individuals aged 12+ in Virginia as of December 30, 2021. The data was acquired from the Virginia Department of Public Health and is not publicly accessible, but made available in this repository. After removing records with vaccine uptake greater than 100%, the validation focuses on 1592 census tracts.
+Validation is performed using CT-level vaccine uptake data for total individuals in Virginia as of December 30, 2021. The data was acquired from the Virginia Department of Public Health and is not publicly accessible, but made available in this repository. After removing records with vaccine uptake greater than 100%, the validation focuses on 1592 census tracts.
 
 ### Adaptability
 
@@ -23,7 +23,9 @@ This study and the associated code are designed to be adaptable across various s
 
 ## Repository Contents
 
-- **`POP_GEN_SCRIPT.R`**: This script contains the code used to generate a synthetic population based on various demographic and COVID-19 health-related variables. The method integrates individual attitudes and initial adoption of protective behaviors using public health survey data, making it applicable for various public health studies. This script also includes generating a synthetic population based on the null model. 
+- **`POP_GEN_SCRIPT.R`**: This script contains the code used to generate a synthetic population based on various demographic and COVID-19 health-related variables. The method integrates individual attitudes and initial adoption of protective behaviors using public health survey data, making it applicable for various public health studies. This script also includes generating a synthetic population based on the null model.
+
+- **`NPS_Dataset.xlsx`**: This is the de-identified nationally representative survey (NPS) collected by researchers in August 2021. This was one of the surveys used to generate synthetic populations.
 
 - **`Census_Tract_VA_Vaccine_Data.xlsx`**: This dataset includes vaccination uptake data for census tracts in Virginia for December 2021 and December 2022. It is used to validate and compare the synthetic population with real-world data.
 
@@ -32,8 +34,13 @@ This study and the associated code are designed to be adaptable across various s
 1. **Synthetic Population Generation**: 
    - The `POP_GEN_SCRIPT.R` script is designed to be run in R. It generates a synthetic population based on demographic distributions and health survey data.
    - Ensure that all necessary R packages are installed, and update file paths as needed.
-
-2. **Vaccination Uptake Validation**:
+   - Survey data and spatially aggregated data will need to be collected and processed by the researcher to incorporate into the script
+     
+2. **Accessible Survey Data**: 
+ - The `NPS_Dataset.xlsx` survey dataset is made available for use by other researchers. It can be used in the provided population synthesis script to generate a population that includes COVID-19 vaccination status and related attitudes and perceptions, aligned with the Health Belief Model and Theory of Planned Behavior. This dataset can be integrated with spatially aggregated data from any U.S. location to create an agent population aged 18+ that is representative of 2021, making it applicable to areas outside of Virginia since it is national-level.
+ - The survey includes a codebook that explains all demographic variables (age, gender, race, education, and income) and COVID-19 related variables. It is important to note that the dataset is unprocessed and will require further processing before being used in the synthetic population generation script.
+   
+3. **Vaccination Uptake Validation**:
    - The `Census_Tract_VA_Vaccine_Data.xlsx` file contains census tract-level vaccination data. This can be used for analysis and comparison with the generated synthetic population representative of Virginia.
    - The data includes fields for census tract IDs, vaccination uptake percentages for December 2021, and December 2022.
 
