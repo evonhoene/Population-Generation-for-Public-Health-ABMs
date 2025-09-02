@@ -45,7 +45,7 @@ This study and the associated code are designed to be adaptable across various s
    - The data includes fields for census tract IDs, vaccination uptake percentages for December 2021, and December 2022.
 
 
-## Aknowledgments 
+## Acknowledgement 
 This research was funded by National Science Foundation (Award #2109647 and #230970).
 
 ## Contact
