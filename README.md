@@ -1,6 +1,8 @@
 # Synthetic Population Generation with Public Health Characteristics for Spatial Agent-Based Models
 
-This repository contains the code used for generating a synthetic population with public health surveys for the initialization of agent populations within spatial ABMs, as well as the data used to validate the synthesized vaccination uptake at the census tract level in Virginia for December 2021. The synthetic population is created by integrating spatially aggregated demographic data from the American Community Survey (ACS) with individual-level survey data on COVID-19 vaccine uptake. The method is adaptable to various spatial scales, time periods, and other health applications such as smoking and other protective behaviors.
+This repository corresponds to the following publication: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012439.
+
+It contains the code used for generating a synthetic population with public health surveys for the initialization of agent populations within spatial ABMs, as well as the data used to validate the synthesized vaccination uptake at the census tract level in Virginia for December 2021. The synthetic population is created by integrating spatially aggregated demographic data from the American Community Survey (ACS) with individual-level survey data on COVID-19 vaccine uptake. The method is adaptable to various spatial scales, time periods, and other health applications such as smoking and other protective behaviors.
 
 
 
@@ -47,6 +49,10 @@ This study and the associated code are designed to be adaptable across various s
 
 ## Acknowledgement 
 This research was funded by National Science Foundation (Award #2109647 and #230970).
+
+## Citation
+
+Von Hoene, E., Roess, A., Kavak, H., & Anderson, T. (2025). Synthetic population generation with public health characteristics for spatial agent-based models. PLOS Computational Biology, 21(3), e1012439.
 
 ## Contact
 
